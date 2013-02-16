@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pages_id: 1
+  pages_issues_id: 1
+  pages_issues_journals_id: 1
+  pages_templates_id: 1
+  articles_id: 1
+
+two:
+  pages_id: 1
+  pages_issues_id: 1
+  pages_issues_journals_id: 1
+  pages_templates_id: 1
+  articles_id: 1

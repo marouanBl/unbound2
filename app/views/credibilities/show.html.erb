@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Confirm:</b>
+  <%= @credibility.confirm %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @credibility.created_at %>
+</p>
+
+<p>
+  <b>Articles:</b>
+  <%= @credibility.articles_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_credibility_path(@credibility) %> |
+<%= link_to 'Back', credibilities_path %>

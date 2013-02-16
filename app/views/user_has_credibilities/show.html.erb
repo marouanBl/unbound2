@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Users:</b>
+  <%= @user_has_credibility.users_id %>
+</p>
+
+<p>
+  <b>Credibility:</b>
+  <%= @user_has_credibility.credibility_id %>
+</p>
+
+<p>
+  <b>Credibility articles:</b>
+  <%= @user_has_credibility.credibility_articles_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_has_credibility_path(@user_has_credibility) %> |
+<%= link_to 'Back', user_has_credibilities_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Username:</b>
+  <%= @user.username %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>States:</b>
+  <%= @user.states_id %>
+</p>
+
+<p>
+  <b>States countries:</b>
+  <%= @user.states_countries_id %>
+</p>
+
+<p>
+  <b>States continents:</b>
+  <%= @user.states_continents_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

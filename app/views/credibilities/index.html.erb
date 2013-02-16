@@ -1,0 +1,27 @@
+<h1>Listing credibilities</h1>
+
+<table>
+  <tr>
+    <th>Confirm</th>
+    <th>Created at</th>
+    <th>Articles</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @credibilities.each do |credibility| %>
+  <tr>
+    <td><%= credibility.confirm %></td>
+    <td><%= credibility.created_at %></td>
+    <td><%= credibility.articles_id %></td>
+    <td><%= link_to 'Show', credibility %></td>
+    <td><%= link_to 'Edit', edit_credibility_path(credibility) %></td>
+    <td><%= link_to 'Destroy', credibility, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Credibility', new_credibility_path %>

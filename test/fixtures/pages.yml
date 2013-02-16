@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  number: 1
+  pos1: 1
+  pos2: 1
+  pos3: 1
+  pos4: 1
+  pos5: 1
+  pos6: 1
+  pos7: 1
+  pos8: 1
+  pos9: 1
+  pos10: 1
+  pos11: 1
+  pos12: 1
+  pos13: 1
+  pos14: 1
+  pos15: 1
+  pos16: 1
+  issues_id: 1
+  issues_journals_id: 1
+  templates_id: 1
+
+two:
+  number: 1
+  pos1: 1
+  pos2: 1
+  pos3: 1
+  pos4: 1
+  pos5: 1
+  pos6: 1
+  pos7: 1
+  pos8: 1
+  pos9: 1
+  pos10: 1
+  pos11: 1
+  pos12: 1
+  pos13: 1
+  pos14: 1
+  pos15: 1
+  pos16: 1
+  issues_id: 1
+  issues_journals_id: 1
+  templates_id: 1

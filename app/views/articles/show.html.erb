@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @article.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @article.content %>
+</p>
+
+<p>
+  <b>Is draft:</b>
+  <%= @article.is_draft %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @article.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @article.updated_at %>
+</p>
+
+<p>
+  <b>Published at:</b>
+  <%= @article.published_at %>
+</p>
+
+<p>
+  <b>Users:</b>
+  <%= @article.users_id %>
+</p>
+
+<p>
+  <b>Categories:</b>
+  <%= @article.categories_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @journal.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @journal.description %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @journal.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @journal.updated_at %>
+</p>
+
+<p>
+  <b>Users:</b>
+  <%= @journal.users_id %>
+</p>
+
+<p>
+  <b>Categories:</b>
+  <%= @journal.categories_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_journal_path(@journal) %> |
+<%= link_to 'Back', journals_path %>

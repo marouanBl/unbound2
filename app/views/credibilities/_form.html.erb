@@ -1,0 +1,29 @@
+<%= form_for(@credibility) do |f| %>
+  <% if @credibility.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@credibility.errors.count, "error") %> prohibited this credibility from being saved:</h2>
+
+      <ul>
+      <% @credibility.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :confirm %><br />
+    <%= f.check_box :confirm %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :articles_id %><br />
+    <%= f.number_field :articles_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,37 @@
+<%= form_for(@pages_has_article) do |f| %>
+  <% if @pages_has_article.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pages_has_article.errors.count, "error") %> prohibited this pages_has_article from being saved:</h2>
+
+      <ul>
+      <% @pages_has_article.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pages_id %><br />
+    <%= f.number_field :pages_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pages_issues_id %><br />
+    <%= f.number_field :pages_issues_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pages_issues_journals_id %><br />
+    <%= f.number_field :pages_issues_journals_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pages_templates_id %><br />
+    <%= f.number_field :pages_templates_id %>
+  </div>
+  <div class="field">
+    <%= f.label :articles_id %><br />
+    <%= f.number_field :articles_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,31 @@
+<h1>Listing pages_has_articles</h1>
+
+<table>
+  <tr>
+    <th>Pages</th>
+    <th>Pages issues</th>
+    <th>Pages issues journals</th>
+    <th>Pages templates</th>
+    <th>Articles</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pages_has_articles.each do |pages_has_article| %>
+  <tr>
+    <td><%= pages_has_article.pages_id %></td>
+    <td><%= pages_has_article.pages_issues_id %></td>
+    <td><%= pages_has_article.pages_issues_journals_id %></td>
+    <td><%= pages_has_article.pages_templates_id %></td>
+    <td><%= pages_has_article.articles_id %></td>
+    <td><%= link_to 'Show', pages_has_article %></td>
+    <td><%= link_to 'Edit', edit_pages_has_article_path(pages_has_article) %></td>
+    <td><%= link_to 'Destroy', pages_has_article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pages has article', new_pages_has_article_path %>

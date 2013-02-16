@@ -1,0 +1,27 @@
+<h1>Listing user_has_credibilities</h1>
+
+<table>
+  <tr>
+    <th>Users</th>
+    <th>Credibility</th>
+    <th>Credibility articles</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @user_has_credibilities.each do |user_has_credibility| %>
+  <tr>
+    <td><%= user_has_credibility.users_id %></td>
+    <td><%= user_has_credibility.credibility_id %></td>
+    <td><%= user_has_credibility.credibility_articles_id %></td>
+    <td><%= link_to 'Show', user_has_credibility %></td>
+    <td><%= link_to 'Edit', edit_user_has_credibility_path(user_has_credibility) %></td>
+    <td><%= link_to 'Destroy', user_has_credibility, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User has credibility', new_user_has_credibility_path %>

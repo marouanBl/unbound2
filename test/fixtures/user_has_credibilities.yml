@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  users_id: 1
+  credibility_id: 1
+  credibility_articles_id: 1
+
+two:
+  users_id: 1
+  credibility_id: 1
+  credibility_articles_id: 1
