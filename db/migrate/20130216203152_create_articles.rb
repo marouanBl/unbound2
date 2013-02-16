@@ -6,7 +6,7 @@ class CreateArticles < ActiveRecord::Migration
       t.boolean :is_draft
       t.timestamp :created_at
       t.timestamp :updated_at
-      t.timestamps :published_at
+      t.timestamp :published_at
       t.integer :users_id
       t.integer :categories_id
 
