@@ -1,4 +1,6 @@
 Unbound2::Application.routes.draw do
+  devise_for :users
+
   resources :user_has_credibilities
 
 
